@@ -1,0 +1,116 @@
+:root {
+    /* Colors */
+    --color-white: hsl(0, 100%, 100%);
+    --color-off-white: hsl(36, 100%, 99%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-grey-300: hsl(233, 8%, 79%);
+    --color-grey-200: hsl(0, 0%, 85%);
+    --color-navy-950: hsl(240, 100%, 5%);
+    --color-navy-600: hsl(236, 13%, 42%);
+    --color-gold-400: hsl(35, 77%, 62%);
+    --color-red-500: hsl(4, 85%, 63%);
+
+    /* Spacing */
+    --spacing-100: 8px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-800: 64px;
+    --spacing-1100: 88px;
+}
+
+/* Typography Presets */
+.text-preset-1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    /* Extra Bold */
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: 0px;
+}
+
+.text-preset-2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    /* Extra Bold */
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+
+.text-preset-3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    /* Bold */
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+.text-preset-4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    /* Extra Bold */
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.text-preset-5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    /* Extra Bold */
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.text-preset-6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /* Regular */
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.text-preset-7 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    /* Bold */
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4.38px;
+}
+
+/* Macro layouts */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: var(--color-off-white);
+    color: var(--color-navy-950);
+}
+
+
+.container {
+    padding-inline: var(--spacing-100);
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    gap: var(--spacing-300);
+}
+
+main {
+    display: grid;
+    gap: var(--spacing-400);
+}
+
+/* Micro layouts */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
