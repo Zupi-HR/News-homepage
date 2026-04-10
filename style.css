@@ -114,3 +114,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.nav-list {
+    display: none;
+}
+
+.menu-close-btn {
+    display: none;
+}
