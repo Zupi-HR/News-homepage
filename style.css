@@ -187,8 +187,15 @@ header {
     padding-bottom: var(--spacing-400);
 }
 
-.new-article-title {
+
+.new-article a {
+    text-decoration: none;
     color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+.new-article a:hover {
+    color: var(--color-gold-400);
 }
 
 .new-article-desc {
