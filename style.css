@@ -201,3 +201,32 @@ header {
 .new-article-desc {
     color: var(--color-grey-300);
 }
+
+.bottom-news {
+    display: grid;
+    gap: var(--spacing-400);
+}
+
+.bottom-article {
+    display: flex;
+    gap: var(--spacing-300);
+}
+
+.bottom-article-img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.bottom-article-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+}
+
+.bottom-article-content .article-number {
+    color: var(--color-red-500);
+}
+
+.bottom-article-desc {
+    color: var(--color-navy-600);
+}
