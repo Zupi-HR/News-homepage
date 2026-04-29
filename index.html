@@ -14,11 +14,13 @@
     rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 
   <title>Frontend Mentor | News homepage</title>
 </head>
 
 <body>
+  <div class="overlay"></div>
 
   <div class="container">
     <header>
@@ -39,7 +41,7 @@
     <main>
       <article class="featured-article">
         <picture class="featured-image">
-          <source srcset="assets/images/image-web-3-desktop.jpg" media="(width >= 1200px)" />
+          <source srcset="assets/images/image-web-3-desktop.jpg" media="(width >= 1024px)" />
           <img src="assets/images/image-web-3-mobile.jpg" alt="Colorful geometric 3D puzzle blocks interlocking">
         </picture>
         <h1 class="featured-title text-preset-2">The Bright Future of Web 3.0?</h1>
@@ -78,7 +80,8 @@
             alt="Vintage computer monitor alongside cassette tapes">
           <div class="bottom-article-content">
             <span class="article-number text-preset-3">01</span>
-            <h3 class="bottom-article-title text-preset-5">Reviving Retro PCs</h3>
+            <h3 class="bottom-article-title text-preset-5"><a class="bottom-article-title" href="#">Reviving Retro
+                PCs</a></h3>
             <p class="bottom-article-desc text-preset-6">What happens when old PCs are given modern upgrades?</p>
           </div>
         </article>
@@ -87,7 +90,8 @@
             alt="Close-up of a laptop keyboard illuminated with red backlighting">
           <div class="bottom-article-content">
             <span class="article-number text-preset-3">02</span>
-            <h3 class="bottom-article-title text-preset-5">Top 10 Laptops of 2022</h3>
+            <h3 class="bottom-article-title text-preset-5"><a class="bottom-article-title" href="#">Top 10 Laptops of
+                2022</a></h3>
             <p class="bottom-article-desc text-preset-6">Our best picks for various needs and budgets.</p>
           </div>
         </article>
@@ -96,7 +100,7 @@
             alt="Playstation controller floating mid-air above an outstretched hand">
           <div class="bottom-article-content">
             <span class="article-number text-preset-3">03</span>
-            <h3 class="bottom-article-title text-preset-5">The Growth of Gaming</h3>
+            <h3 class="text-preset-5"><a class="bottom-article-title" href="#">The Growth of Gaming</a></h3>
             <p class="bottom-article-desc text-preset-6">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </article>
