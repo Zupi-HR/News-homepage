@@ -4,7 +4,6 @@ const navList = document.querySelector(".nav-list");
 const overlay = document.querySelector(".overlay");
 
 menuOpenBtn.addEventListener("click", (e) => {
-  e.preventDefault();
   navList.classList.add("show");
   menuOpenBtn.classList.add("hide");
   menuCloseBtn.classList.add("show");
@@ -12,7 +11,6 @@ menuOpenBtn.addEventListener("click", (e) => {
 });
 
 menuCloseBtn.addEventListener("click", (e) => {
-  e.preventDefault();
   menuOpenBtn.classList.remove("hide");
   menuCloseBtn.classList.remove("show");
   navList.classList.remove("show");

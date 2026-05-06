@@ -105,6 +105,10 @@ body {
   z-index: 1;
 }
 
+.overlay.show {
+  display: block;
+}
+
 .container {
   padding: var(--spacing-300);
   max-width: 75rem;
@@ -145,6 +149,10 @@ header {
   padding-top: 8.125rem;
 }
 
+.nav-list.show {
+  display: flex;
+}
+
 .nav-link {
   text-decoration: none;
   color: var(--color-navy-950);
@@ -160,9 +168,12 @@ header {
   border: none;
   padding: 0;
   cursor: pointer;
-  outline: inherit;
   position: relative;
   z-index: 3;
+}
+
+.menu-open-btn.hide {
+  display: none;
 }
 
 .menu-close-btn {
@@ -173,16 +184,12 @@ header {
   border: none;
   padding: 0;
   cursor: pointer;
-  outline: inherit;
 }
 
-.show {
-  display: flex;
+.menu-close-btn.show {
+  display: block;
 }
 
-.hide {
-  display: none;
-}
 
 .featured-article {
   display: flex;
@@ -307,6 +314,7 @@ header {
     padding: 0;
     flex-direction: row;
   }
+
 
   .menu-open-btn {
     display: none;
