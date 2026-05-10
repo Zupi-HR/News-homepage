@@ -299,7 +299,7 @@ header {
 }
 
 @media (min-width: 64rem) {
-  .overlay {
+  .overlay.show {
     display: none;
   }
 
@@ -312,6 +312,10 @@ header {
     background-color: transparent;
     padding: 0;
     flex-direction: row;
+  }
+
+  .menu-close-btn.show {
+    display: none;
   }
 
   .menu-open-btn {
