@@ -6,9 +6,11 @@ const overlay = document.querySelector(".overlay");
 menuOpenBtn.addEventListener("click", openMenu);
 
 menuCloseBtn.addEventListener("click", closeMenu);
+
 document.addEventListener("keydown", (e) => {
   if (navList.classList.contains("show") && e.key === "Escape") closeMenu();
 });
+
 overlay.addEventListener("click", closeMenu);
 
 function openMenu() {
@@ -17,6 +19,7 @@ function openMenu() {
   menuCloseBtn.classList.add("show");
   overlay.classList.add("show");
   menuOpenBtn.setAttribute("aria-expanded", "true");
+  menuCloseBtn.focus();
 }
 
 function closeMenu() {
@@ -25,4 +28,5 @@ function closeMenu() {
   navList.classList.remove("show");
   overlay.classList.remove("show");
   menuOpenBtn.setAttribute("aria-expanded", "false");
+  menuOpenBtn.focus();
 }
