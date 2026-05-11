@@ -1,174 +1,146 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | News homepage</title>
-  </head>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 
-  <body>
-    <div class="overlay"></div>
+  <title>Frontend Mentor | News homepage</title>
+</head>
 
-    <div class="container">
-      <header>
-        <a href="#"><img src="assets/images/logo.svg" alt="W. Homepage" /></a>
-        <nav class="primary-navigation" aria-label="Main">
-          <button
-            class="menu-open-btn"
-            aria-label="Open menu"
-            aria-expanded="false"
-            aria-controls="nav-list"
-          >
-            <img src="assets/images/icon-menu.svg" alt="" />
-          </button>
-          <button class="menu-close-btn" aria-label="Close menu">
-            <img src="assets/images/icon-menu-close.svg" alt="" />
-          </button>
-          <ul id="nav-list" class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link text-preset-6">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-preset-6">New</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-preset-6">Popular</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-preset-6">Trending</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-preset-6">Categories</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <article class="featured-article">
-          <picture class="featured-image">
-            <source
-              srcset="assets/images/image-web-3-desktop.jpg"
-              media="(width >= 1024px)"
-            />
-            <img
-              src="assets/images/image-web-3-mobile.jpg"
-              alt="Colorful geometric 3D puzzle blocks interlocking"
-            />
-          </picture>
-          <h1 class="featured-title text-preset-2">
-            The Bright Future of Web 3.0?
-          </h1>
-          <div class="featured-content">
-            <p class="featured-description text-preset-6">
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
+<body>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <header>
+      <a href="#"><img src="assets/images/logo.svg" alt="W. Homepage" /></a>
+      <nav class="primary-navigation" aria-label="Main">
+        <button class="menu-open-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
+          <img src="assets/images/icon-menu.svg" alt="" />
+        </button>
+        <button class="menu-close-btn" aria-label="Close menu">
+          <img src="assets/images/icon-menu-close.svg" alt="" />
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-preset-6">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-preset-6">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-preset-6">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-preset-6">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-preset-6">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="featured-article">
+        <picture class="featured-image">
+          <source srcset="assets/images/image-web-3-desktop.jpg" media="(min-width: 1024px)" />
+          <img src="assets/images/image-web-3-mobile.jpg" alt="Colorful geometric 3D puzzle blocks interlocking" />
+        </picture>
+        <h1 class="featured-title text-preset-2">
+          The Bright Future of Web 3.0?
+        </h1>
+        <div class="featured-content">
+          <p class="featured-description text-preset-6">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is
+            it really fulfilling its promise?
+          </p>
+          <a href="#" class="btn read-more-btn text-preset-7">Read more</a>
+        </div>
+      </article>
+      <section class="new-news">
+        <h2 class="new-news-title text-preset-3">New</h2>
+        <article class="new-article">
+          <h3 class="new-article-title text-preset-4">
+            <a href="#">Hydrogen VS Electric Cars</a>
+          </h3>
+          <p class="new-article-desc text-preset-6">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <article class="new-article">
+          <h3 class="new-article-title text-preset-4">
+            <a href="#">The Downsides of AI Artistry</a>
+          </h3>
+          <p class="new-article-desc text-preset-6">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+        <article class="new-article">
+          <h3 class="new-article-title text-preset-4">
+            <a href="#">Is VC Funding Drying Up?</a>
+          </h3>
+          <p class="new-article-desc text-preset-6">
+            Private funding by VC firms is down 50% YOY. We take a look at
+            what that means.
+          </p>
+        </article>
+      </section>
+      <section class="bottom-news">
+        <article class="bottom-article">
+          <img src="assets/images/image-retro-pcs.jpg" class="bottom-article-img" width="200" height="250"
+            alt="Vintage computer monitor alongside cassette tapes" />
+          <div class="bottom-article-content">
+            <span class="article-number text-preset-3">01</span>
+            <h3 class="text-preset-5">
+              <a class="bottom-article-title" href="#">Reviving Retro PCs</a>
+            </h3>
+            <p class="bottom-article-desc text-preset-6">
+              What happens when old PCs are given modern upgrades?
             </p>
-            <a href="#" class="btn read-more-btn text-preset-7">Read more</a>
           </div>
         </article>
-        <section class="new-news">
-          <h2 class="new-news-title text-preset-3">New</h2>
-          <article class="new-article">
-            <h3 class="new-article-title text-preset-4">
-              <a href="#">Hydrogen VS Electric Cars</a>
+        <article class="bottom-article">
+          <img src="assets/images/image-top-laptops.jpg" class="bottom-article-img" width="200" height="250"
+            alt="Close-up of a laptop keyboard illuminated with red backlighting" />
+          <div class="bottom-article-content">
+            <span class="article-number text-preset-3">02</span>
+            <h3 class="text-preset-5">
+              <a class="bottom-article-title" href="#">Top 10 Laptops of 2022</a>
             </h3>
-            <p class="new-article-desc text-preset-6">
-              Will hydrogen-fueled cars ever catch up to EVs?
+            <p class="bottom-article-desc text-preset-6">
+              Our best picks for various needs and budgets.
             </p>
-          </article>
-          <article class="new-article">
-            <h3 class="new-article-title text-preset-4">
-              <a href="#">The Downsides of AI Artistry</a>
+          </div>
+        </article>
+        <article class="bottom-article">
+          <img src="assets/images/image-gaming-growth.jpg" class="bottom-article-img" width="200" height="250"
+            alt="Playstation controller floating mid-air above an outstretched hand" />
+          <div class="bottom-article-content">
+            <span class="article-number text-preset-3">03</span>
+            <h3 class="text-preset-5">
+              <a class="bottom-article-title" href="#">The Growth of Gaming</a>
             </h3>
-            <p class="new-article-desc text-preset-6">
-              What are the possible adverse effects of on-demand AI image
-              generation?
+            <p class="bottom-article-desc text-preset-6">
+              How the pandemic has sparked fresh opportunities.
             </p>
-          </article>
-          <article class="new-article">
-            <h3 class="new-article-title text-preset-4">
-              <a href="#">Is VC Funding Drying Up?</a>
-            </h3>
-            <p class="new-article-desc text-preset-6">
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
-        </section>
-        <section class="bottom-news">
-          <article class="bottom-article">
-            <img
-              src="assets/images/image-retro-pcs.jpg"
-              class="bottom-article-img"
-              alt="Vintage computer monitor alongside cassette tapes"
-            />
-            <div class="bottom-article-content">
-              <span class="article-number text-preset-3">01</span>
-              <h3 class="bottom-article-title text-preset-5">
-                <a class="bottom-article-title" href="#">Reviving Retro PCs</a>
-              </h3>
-              <p class="bottom-article-desc text-preset-6">
-                What happens when old PCs are given modern upgrades?
-              </p>
-            </div>
-          </article>
-          <article class="bottom-article">
-            <img
-              src="assets/images/image-top-laptops.jpg"
-              class="bottom-article-img"
-              alt="Close-up of a laptop keyboard illuminated with red backlighting"
-            />
-            <div class="bottom-article-content">
-              <span class="article-number text-preset-3">02</span>
-              <h3 class="bottom-article-title text-preset-5">
-                <a class="bottom-article-title" href="#"
-                  >Top 10 Laptops of 2022</a
-                >
-              </h3>
-              <p class="bottom-article-desc text-preset-6">
-                Our best picks for various needs and budgets.
-              </p>
-            </div>
-          </article>
-          <article class="bottom-article">
-            <img
-              src="assets/images/image-gaming-growth.jpg"
-              class="bottom-article-img"
-              alt="Playstation controller floating mid-air above an outstretched hand"
-            />
-            <div class="bottom-article-content">
-              <span class="article-number text-preset-3">03</span>
-              <h3 class="text-preset-5">
-                <a class="bottom-article-title" href="#"
-                  >The Growth of Gaming</a
-                >
-              </h3>
-              <p class="bottom-article-desc text-preset-6">
-                How the pandemic has sparked fresh opportunities.
-              </p>
-            </div>
-          </article>
-        </section>
-      </main>
-    </div>
-  </body>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+
 </html>

@@ -16,6 +16,8 @@ menuCloseBtn.addEventListener("click", closeMenu);
 document.addEventListener("keydown", (e) => {
   if (navList.classList.contains("show") && e.key === "Escape") closeMenu();
   if (navList.classList.contains("show") && e.key === "Tab") {
+    if (focusableElements.length === 0) return;
+
     if (e.shiftKey && document.activeElement === firstFocusableElement) {
       e.preventDefault();
       lastFocusableElement.focus();
