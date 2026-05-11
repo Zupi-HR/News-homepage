@@ -35,7 +35,6 @@ function openMenu() {
   menuOpenBtn.classList.add("hide");
   menuCloseBtn.classList.add("show");
   overlay.classList.add("show");
-  menuOpenBtn.setAttribute("aria-expanded", "true");
   menuCloseBtn.focus();
 }
 
@@ -44,6 +43,5 @@ function closeMenu() {
   menuCloseBtn.classList.remove("show");
   navList.classList.remove("show");
   overlay.classList.remove("show");
-  menuOpenBtn.setAttribute("aria-expanded", "false");
   menuOpenBtn.focus();
 }
